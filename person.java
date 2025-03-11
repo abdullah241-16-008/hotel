@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package hotel_managment_system;
+package hotel_managemnet_system;
 import javax.swing.JOptionPane;
 
 /**
@@ -27,76 +27,30 @@ public class person extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSeparator1 = new javax.swing.JSeparator();
         buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        rmale = new javax.swing.JRadioButton();
-        tid = new javax.swing.JTextField();
-        rfemale = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
-        tname = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        tphone = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         tadd = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         temail = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        rmale = new javax.swing.JRadioButton();
+        rfemale = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
+        cmbdis = new javax.swing.JComboBox<>();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        bperson = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
+        textcid = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        tname = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        tphone = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        tpassword = new javax.swing.JPasswordField();
         reg = new javax.swing.JButton();
+        msg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jTextField1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
-        jTextField1.setText("Registration");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(224, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(262, 262, 262))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
-
-        jLabel7.setText("Email");
-
-        jLabel2.setText("Id ");
-
-        buttonGroup1.add(rmale);
-        rmale.setText("Male");
-
-        buttonGroup1.add(rfemale);
-        rfemale.setText("Female");
-
-        jLabel3.setText("Name");
-
-        tname.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                tnameFocusLost(evt);
-            }
-        });
-        tname.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tnameActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Address");
 
         jLabel5.setText("Phone");
 
@@ -113,16 +67,77 @@ public class person extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Person");
+        jLabel7.setText("Email");
 
-        bperson.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Guest", "Manager", "Technical Staff", "Housekeeper", "Service Provider" }));
+        buttonGroup1.add(rmale);
+        rmale.setText("Male");
 
-        reg.setText("registration");
-        reg.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(rfemale);
+        rfemale.setText("Female");
+
+        jLabel8.setText("Person");
+
+        cmbdis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Guest", "Manager", "Technical Staff", "Housekeeper", "Service Provider" }));
+        cmbdis.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cmbdis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regActionPerformed(evt);
+                cmbdisActionPerformed(evt);
             }
         });
+
+        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setText("Registration");
+        jLabel1.setToolTipText("");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(148, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(89, 89, 89))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jLabel2.setText(" Id ");
+
+        textcid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textcidActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Name");
+
+        tname.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                tnameFocusLost(evt);
+            }
+        });
+        tname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tnameActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Address");
+
+        jLabel9.setText("Password");
+
+        reg.setText("registration");
+
+        msg.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(102, 204, 255), new java.awt.Color(204, 255, 204), new java.awt.Color(255, 204, 204)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,15 +146,23 @@ public class person extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(198, 198, 198)
+                        .addGap(63, 63, 63)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
                             .addComponent(jLabel7)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel8)
+                                .addComponent(jLabel6))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel2))))
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(temail, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -150,22 +173,23 @@ public class person extends javax.swing.JFrame {
                                 .addComponent(rmale)
                                 .addGap(18, 18, 18)
                                 .addComponent(rfemale))
-                            .addComponent(tid)
-                            .addComponent(bperson, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(cmbdis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(textcid)
+                            .addComponent(tpassword)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(250, 250, 250)
+                        .addComponent(reg))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(283, 283, 283)
-                        .addComponent(reg)))
-                .addContainerGap(39, Short.MAX_VALUE))
+                        .addGap(112, 112, 112)
+                        .addComponent(msg, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(191, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addGap(15, 15, 15)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel7)
                     .addGroup(layout.createSequentialGroup()
@@ -187,34 +211,27 @@ public class person extends javax.swing.JFrame {
                     .addComponent(rmale)
                     .addComponent(rfemale)
                     .addComponent(jLabel6))
-                .addGap(18, 18, 18)
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(bperson, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jLabel8)
+                    .addComponent(cmbdis, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(tid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
+                    .addComponent(textcid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(tpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(reg)
-                .addContainerGap(140, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(msg, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void tnameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tnameFocusLost
-
-        String name = tname.getText().trim();
-        if(name.isBlank()){
-            JOptionPane.showMessageDialog(tname, "Name can't be null");
-            tname.grabFocus();
-        }
-    }//GEN-LAST:event_tnameFocusLost
-
-    private void tnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tnameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tnameActionPerformed
 
     private void temailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_temailFocusLost
         // TODO add your handling code here:
@@ -231,13 +248,75 @@ public class person extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_temailActionPerformed
 
+    private void cmbdisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbdisActionPerformed
+        // Generate 6-digit ID based on selected category
+        String selectedPerson = cmbdis.getSelectedItem().toString();
+        String prefix = "";
+        
+        // Set prefix based on person category
+        switch(selectedPerson) {
+            case "Guest":
+                prefix = "10";
+                break;
+            case "Manager":
+                prefix = "20";
+                break;
+            case "Technical Staff":
+                prefix = "30";
+                break;
+            case "Housekeeper":
+                prefix = "40";
+                break;
+            case "Service Provider":
+                prefix = "50";
+                break;
+        }
+        
+        // Generate random 4 digits to complete the 6-digit ID
+        int random = (int) (Math.random() * 10000);
+        String randomStr = String.format("%04d", random); // Ensure 4 digits with leading zeros
+        
+        // Set the ID in the textcid field
+        textcid.setText(prefix + randomStr);
+    }//GEN-LAST:event_cmbdisActionPerformed
+
+    private void textcidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textcidActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textcidActionPerformed
+
+    private void tnameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tnameFocusLost
+
+        String name = tname.getText().trim();
+        if(name.isBlank()){
+            //Jmsg.setText("Name can't be null");
+            JOptionPane.showMessageDialog(tname, "Name can't be null");
+            tname.grabFocus();
+        }
+    }//GEN-LAST:event_tnameFocusLost
+
+    private void tnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tnameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tnameActionPerformed
+
     private void regActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regActionPerformed
+        // Get the values from form
+        String id = textcid.getText();
         String name = tname.getText();
-        String add = tadd.getText();
-        String email = temail.getText();
+        String address = tadd.getText();
         String phone = tphone.getText();
-        String gender = rmale.isSelected()?"Male":"Female";
-        String person = (String)bperson.getSelectedItem();
+        String email = temail.getText();
+        String gender = rmale.isSelected() ? "Male" : "Female";
+        String personType = cmbdis.getSelectedItem().toString();
+        String password = new String(tpassword.getPassword());
+        
+        // Validate all fields are filled
+        if(id.isEmpty() || name.isEmpty() || address.isEmpty() || phone.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            msg.setText("Please fill all fields");
+            return;
+        }
+        
+        // Display registration confirmation with ID
+        msg.setText("Registration successful! Your ID is: " + id + " (" + personType + ")");
     }//GEN-LAST:event_regActionPerformed
 
     /**
@@ -276,9 +355,8 @@ public class person extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> bperson;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JComboBox<String> cmbdis;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -286,16 +364,18 @@ public class person extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel msg;
     private javax.swing.JButton reg;
     private javax.swing.JRadioButton rfemale;
     private javax.swing.JRadioButton rmale;
     private javax.swing.JTextField tadd;
     private javax.swing.JTextField temail;
-    private javax.swing.JTextField tid;
+    private javax.swing.JTextField textcid;
     private javax.swing.JTextField tname;
+    private javax.swing.JPasswordField tpassword;
     private javax.swing.JTextField tphone;
     // End of variables declaration//GEN-END:variables
 }
